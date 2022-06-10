@@ -10,7 +10,8 @@ export default function TitleSection(){
                 <Title>Dashboard</Title>
                 <Subtitle>Desafio Técnico Frontend</Subtitle>
             </div>
-            <BtnFiltro>Filtro</BtnFiltro>
+            {/* Falta adicionar o icone de filtro */}
+            <BtnFiltro>Filtrar</BtnFiltro>
         </section>
     )
 }
