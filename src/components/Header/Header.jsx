@@ -4,14 +4,11 @@
 
 import styled from 'styled-components'
 
-const Header = styled.div`
+const Header = styled.header`
 /* Rectangle 2 */
 
-position: absolute;
 width: 100%;
 height: 91px;
-left: 0px;
-top: 0px;
 
 /* Light purple */
 
