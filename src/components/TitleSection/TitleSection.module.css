@@ -1,6 +1,12 @@
-.topSec {
+.topSection {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 25px;
 }
+
+.topSection > div > h1, h2 {
+    margin: 5px 0 5px 0;
+}
+
