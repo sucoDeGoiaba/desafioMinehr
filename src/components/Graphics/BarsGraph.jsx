@@ -1,5 +1,6 @@
 import ReactApexChart from "react-apexcharts";
 import style from "./Graphics.module.css"
+import infoIcon from "../../assets/infoIcon.svg"
 export default function BarsGraph(){
   const option = {
     series: [{
@@ -28,7 +29,14 @@ export default function BarsGraph(){
             zoom: false,
             zoomin: false,
             zoomout: false,
-            reset: false
+            reset: false,
+            pan: false,
+            customIcons: [{
+            icon: `<img src=${infoIcon} alt="info icon"/>`,
+            index: -1,
+            title: 'tooltip of the icon',
+            class: 'infoIcon',
+            }]
           }
         },
       },

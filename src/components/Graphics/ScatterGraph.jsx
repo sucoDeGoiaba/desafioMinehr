@@ -1,6 +1,7 @@
 import ReactApexChart from "react-apexcharts";
 import style from "./Graphics.module.css"
-
+import infoIcon from "../../assets/infoIcon.svg"
+import "./Graphics.module.css"
 export default function ScatterGraph(){
     const option = {
         series: [{
@@ -18,23 +19,23 @@ export default function ScatterGraph(){
         }],
         options: {
             chart: {
-            height: 350,
-            type: 'scatter',
-            toolbar: {
-                tools: {
-                  zoom: false,
-                  zoomin: false,
-                  zoomout: false,
-                  reset: false,
-                  pan: false,
-                  customIcons: [{
-                    icon: '',
-                    index: -1,
-                    title: 'tooltip of the icon',
-                    class: 'custom-icon',
-                    }]
+                height: 350,
+                type: 'scatter',
+                toolbar: {
+                    tools: {
+                        zoom: false,
+                        zoomin: false,
+                        zoomout: false,
+                        reset: false,
+                        pan: false,
+                        customIcons: [{
+                        icon: `<img src=${infoIcon} alt="info icon"/>`,
+                        index: -1,
+                        title: 'tooltip of the icon',
+                        class: 'infoIcon',
+                        }]
+                    }
                 }
-              }
             },
             title: {
                 text: 'Scatter',
