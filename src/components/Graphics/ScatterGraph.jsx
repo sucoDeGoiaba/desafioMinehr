@@ -19,7 +19,22 @@ export default function ScatterGraph(){
         options: {
             chart: {
             height: 350,
-            type: 'scatter'
+            type: 'scatter',
+            toolbar: {
+                tools: {
+                  zoom: false,
+                  zoomin: false,
+                  zoomout: false,
+                  reset: false,
+                  pan: false,
+                  customIcons: [{
+                    icon: '',
+                    index: -1,
+                    title: 'tooltip of the icon',
+                    class: 'custom-icon',
+                    }]
+                }
+              }
             },
             title: {
                 text: 'Scatter',
@@ -56,7 +71,6 @@ export default function ScatterGraph(){
                 series={option.series} 
                 type="scatter" 
                 height={350} 
-                width={650}
             />
         </div>
     )

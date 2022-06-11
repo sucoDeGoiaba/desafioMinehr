@@ -23,6 +23,14 @@ export default function BarsGraph(){
       chart: {
         type: 'bar',
         height: 350,
+        toolbar: {
+          tools: {
+            zoom: false,
+            zoomin: false,
+            zoomout: false,
+            reset: false
+          }
+        },
       },
       plotOptions: {
         bar: {
@@ -49,7 +57,6 @@ export default function BarsGraph(){
         series={option.series} 
         type="bar" 
         height={350} 
-        width={650}
       />
     </div>
   )
