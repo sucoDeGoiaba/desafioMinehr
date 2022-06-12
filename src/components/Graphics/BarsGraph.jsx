@@ -32,10 +32,10 @@ export default function BarsGraph(){
             reset: false,
             pan: false,
             customIcons: [{
-            icon: `<img src=${infoIcon} alt="info icon"/>`,
-            index: -1,
-            title: 'tooltip of the icon',
-            class: 'infoIcon',
+              icon: `<img src=${infoIcon} alt="info icon"/>`,
+              index: -1,
+              title: 'tooltip of the icon',
+              class: 'infoIcon',
             }]
           }
         },

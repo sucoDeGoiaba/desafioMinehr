@@ -5,9 +5,3 @@
     margin: 0;
     padding: 0;
 }
-
-.apexcharts-toolbar{
-    width: 80%;
-    max-width: none;
-    flex-direction: end;
-}
