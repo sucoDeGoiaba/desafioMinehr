@@ -3,6 +3,9 @@ import styled from "styled-components";
 const BtnFiltro = styled.button`
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 width: 100px;
 height: 40px;
 
